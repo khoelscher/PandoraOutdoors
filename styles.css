@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+section {
+  padding: 0 0 50px 0;
+}
+
+
+/* -------------------------------------------------Nav section----------------------------------------- */
+.nav-link {
+  color: black;
+}
+
+.home-btn:hover {
+  text-decoration: none;
+}
+
+.home-btn{
+  font-family: 'Open Sans', sans-serif;
+  font-size: larger;
+}
+
+.nav-logo{
+  height: 5vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* -------------------------------------------------intro section----------------------------------------- */
+
+.title-bumper{
+  background-color: black;
+  align-content: center;
+
+}
+
+.logo-title{
+  height: 25vh;
+  object-fit: fill;
+  padding: 50px;
+}
+
+.intro-header {
+  padding-top: 0;
+  overflow: hidden;
+  height: 75vh;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  animation: fade 5s ease forwards;
+}
+
+.shadow-bg h1 {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 210px;
+  color: white;
+  animation: fade 5s ease forwards;
+}
+
+.bg {
+  background-image: url("images/header.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-attachment: fixed;
+  animation: fade 1s ease forwards;
+
+
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* -------------------------------------------------Blurb section----------------------------------------- */
+
+
+
+.row {
+  width: 80%;
+}
+
+.blurb-box {
+  margin: 20px 0;
+  height: 250px;
+  ;
+}
+
+.blurb-box p {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.blurb-image {
+  transition: margin-bottom .5s, padding .3s;
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blurb-image:hover {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.weather-box{
+  background-color: #87CEEB ;
+  height: 30vh;
+  width: 75vw;
+  margin: auto;
+}
+
+/* -------------------------------------------------Tips section----------------------------------------- */
+.color-section {
+  padding-top: 50px;
+  background-color: #565d47;
+}
+
+.posts {
+  margin-left: 50%;
+}
+
+.big-heading {
+  color: #dd7631;
+  padding-bottom: 50px;
+  font-size: 4rem;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: underline;
+}
+
+.compose-form {
+  margin-left: 475px;
+  width: 500px;
+}
