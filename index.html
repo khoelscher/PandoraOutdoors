@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Pandora Outdoors</title>
-  <script src="weather.js"></script>
-
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -29,10 +27,10 @@
     </div>
 
   </div>
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+  <div class=" navbar d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
     <h5 class="nav-addmy-0 mr-md-auto font-weight-normal"><a class="home-btn" href="/"><img  class="nav-logo" src="images/pandora-logo-black.png" alt=""></a></h5>
     <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="/contact">Contact</a>
+      <!-- <a class="p-2 text-dark" href="/contact">Contact</a> -->
     </nav>
   </div>
 </section>
@@ -53,7 +51,7 @@
 
     <div class="blurb-box col-lg-4" id="blurb3">
       <img class="blurb-image" src="images/weather.jpg" alt="weather-img">
-      <p>Don't get rained out! <br> Check local weather.</p>
+      <p>Don't get rained out! <br> Check current weather.</p>
 
     </div>
   </div>
@@ -64,28 +62,35 @@
  <div class="weather-box">
 
     <div class="weather-main">
-      <h2>check weather in your local area</h2>
+      <h2>Check current weather!</h2>
     </div>
 
     <div class="weather-input">
-      <form method='post'>
-        <input type="text" placeholder="City" name="cityInput">
-        <!-- <input type="text" placeholder="State" name="state-input"> -->
-        <input type="submit" value="submit" name="weatherSubmit">
-      </form>
-
+        <input type="text" placeholder="City" class="cityInput">
+        <!-- <input type="text" placeholder="State" name="stateInput"> -->
+        <input type="submit" value="submit" class="weatherSubmit">
     </div>
 
     <div class="weatherOutput">
-      <h2 name="infoCity"></h2>
-      <p name="infoTemp"></p>
-      <p name="infoDesc"></p>
-      <img src="" alt="">
+
+      <div class="weatherTemp">
+        <h2 class="displayCity"></h2>
+        <h2 class="displayTemp"></h2>
+        </div>
+      
+
+        <div class="weatherDescription">
+          <h2 class="displayDesc"></h2>
+          <img id="weatherIcon" src="" alt="">
+        </div>
+      
     </div>
 
   </div>
 
 </section>
+<script src="./app.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
