@@ -9,10 +9,13 @@ html {
   height: 100%;
   text-align: center;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: rgb(243, 242, 242);
+
 }
 
 section {
-  padding: 0 0 100px 0;
+  padding: 0 0 5rem 0;
 }
 
 .talking-head{
@@ -99,6 +102,29 @@ section {
 }
 
 
+.social{
+  height: 100px;
+  
+}
+
+.social-icon{
+  transition: height .2s;
+  height:64px;
+}
+
+.social-icon:hover{
+  height: 75px;
+  cursor: pointer;
+}
+
+.social-link{
+ padding-left: 5rem;
+}
+
+.social-git{
+padding-right: 5rem;
+}
+
 
 /* -------------------------------------------------Blurb section----------------------------------------- */
 
@@ -170,15 +196,15 @@ section {
   display: grid;
 }
 
-.grid-container {
+.grid-container{
   display: inline-grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
   grid-gap: 10px;
 }
 
-.grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
+.grid-item{
+  border: solid;
   text-align: center;
 }
 
@@ -188,7 +214,6 @@ section {
 }
 
 .item2 {
-
   grid-row: 2;
 }
 
